@@ -1,0 +1,37 @@
+html {
+  font-size: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 200;
+  color: $darkBlue;
+  margin: 15% 0 0;
+  strong {
+    font-weight: 600;
+  }
+}
+
+p {
+  color: $grayishBlue;
+  font-size: 15px;
+}
+
+h3 {
+  color: $darkBlue;
+  margin: 0;
+}

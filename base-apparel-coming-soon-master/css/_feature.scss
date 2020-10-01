@@ -1,0 +1,64 @@
+.base-apparel-about{
+    margin: 7%;
+    text-align: center;
+
+    @include breakpoint(large){
+        margin: 0 15% 7%;
+        text-align: left;
+    }
+
+    
+    form {     
+        display: grid;
+        grid-template-columns: 80% 20%;
+
+        .email-address {
+            position: relative;
+            border: 1px solid $desaturatedRed;
+            padding: 15px 40px;
+            font-weight: 600;
+            border-radius: 30px;
+            color: $desaturatedRed;
+
+            &.icon-error {
+                background: url("../images/icon-error.svg");
+                background-repeat: no-repeat;
+                background-position: 80%;
+            }
+        }
+
+        ::placeholder {
+            color: $desaturatedRed;
+        }
+
+        .submit {
+            position: relative;
+            border: none;   
+            background-color: $desaturatedRed;
+            background-image: url("../images/icon-arrow.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 10px 40px;
+            font-weight: 700;
+            border-radius: 30px; 
+            left: -50px;   
+
+            &:hover{
+                background-color:hsl(0, 80%, 86%);
+            }
+        }
+
+        p {
+            display: none;
+        }
+
+        .email-input-error {
+            display: block;
+            color: $softRed;
+        }
+      
+    }
+
+}
+
+

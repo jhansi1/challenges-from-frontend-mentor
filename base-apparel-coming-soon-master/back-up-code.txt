@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile-styles.css">
+    <link rel="stylesheet" media="screen and (min-width:501px)" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <main class="whole-content">
+
+    <section class="content">
+      <header class="logo">
+        <section >
+          <img src="images/logo.svg" alt="">
+        </section>
+      </header>
+
+      <section class="base-apparel-about">
+
+
+        <section class="apparel-description">
+          <h1><span>We're</span><br>
+            coming <br> soon</h1>
+
+          <p>Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+          <form class="contact">
+            <div class="email">
+              <input required class="email-details" type="email" name="email" placeholder="Email Address">
+              <input class="submit" type="submit" value=">">
+            </div>
+          </form>
+        </section>
+
+      </section>
+    </section>
+
+
+      <section class="base-apparel-hero">
+        <picture>
+          <source class="hero-desktop-image" media="(min-width: 501px)" srcset="images/hero-desktop.jpg">
+          <img class="hero-mobile-image" src="images/hero-mobile.jpg" alt="hero-mobile-image">
+        </picture>
+      </section>
+
+  </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Jhansi Ponnada</a>.
+      </p>
+    </footer>
+
+
+
+</body>
+
+</html>
+
+-----------------------
+body, html, head {
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  font-family: monospace;
+  font-size: 5em;
+  text-transform: uppercase;
+  margin: 7rem 0 2rem;
+  line-height: 0.9;
+  color:black;
+  color: hsl(0, 6%, 24%);
+}
+
+p {
+  line-height: 1.75;
+  color: #f2a6a6;
+  color: hsl(0, 36%, 70%);
+}
+
+span {
+  color: #f2a6a6;
+  color: hsl(0, 36%, 70%);
+  letter-spacing: 0.2em;
+}
+
+
+
+
+/* whole content */
+.content {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  align-items: stretch;
+  width:60%;
+}
+/* header */
+.logo{
+  height: 50%;
+  flex:1;
+  box-sizing: border-box;
+  padding-top: 7%;
+  padding-left: 12.5%;
+
+}
+
+/* Intro */
+.base-apparel-about {
+  height: 50%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  padding: 3% 13%;
+  box-sizing: border-box;
+  flex:1;
+}
+
+
+.whole-content{
+  display: flex;
+  height: 100%;
+  background-image: url("../images/bg-pattern-desktop.svg");
+}
+
+
+/* contact */
+.contact{
+  margin-top: 10%;
+    color: hsl(0, 36%, 70%);
+}
+
+
+.email-details{
+  border-color:#f2a6a6;
+  border-color: hsl(0, 93%, 68%);
+  border-radius: 30%;
+  border-width:medium;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-left-radius: 20px;
+  text-indent: 0;
+  display: inline-block;
+  color: hsl(0, 36%, 70%);
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  height: 40px;
+  line-height: 20px;
+  width: 85%;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 0 #fafafa;
+}
+
+.submit{
+  border-radius: 30%;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .6);
+  box-shadow: hsl(0, 6%, 24%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-width: 0;
+  height: 46px;
+  width: 20%;
+  background-color:hsl(0, 74%, 74%);
+  color: white;
+  position: absolute;
+  right: 5%;
+
+}
+
+.submit:hover{
+  background-color:hsl(0, 80%, 86%);
+}
+
+.email{
+  position: relative;
+}
+
+
+/* hero image */
+.base-apparel-hero {
+  width: 40%;
+}
+
+.hero-desktop-image{
+  width: 100%;
+  height: 100%;
+}
+
+-------------------------
+body, html, head{
+  margin:0;
+}
+
+
+h1 {
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  font-family: monospace;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 3rem 0 2rem;
+  line-height: 0.9;
+  color:black;
+  color: hsl(0, 6%, 24%);
+  text-align: center;
+
+}
+
+p {
+  line-height: 1.75;
+  color: #f2a6a6;
+  color: hsl(0, 36%, 70%);
+  text-align: center;
+}
+
+span {
+  color: #f2a6a6;
+  color: hsl(0, 36%, 70%);
+  letter-spacing: 0.2em;
+}
+
+
+
+
+
+/* whole content */
+.whole-content {
+  display: flex;
+  flex-wrap: wrap;
+    background-image: url("../images/bg-pattern-desktop.svg");
+}
+
+/* header */
+.logo{
+  margin: 7% 7%;
+}
+
+/* Intro */
+.content{
+  order:-1;
+}
+
+.base-apparel-about {
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  padding: 3% 7%;
+  box-sizing: border-box;
+  order:1;
+}
+
+/* contact */
+.contact{
+  margin-top: 10%;
+    color: hsl(0, 36%, 70%);
+}
+
+
+.email-details{
+  border-color:#f2a6a6;
+  border-color: hsl(0, 93%, 68%);
+  border-radius: 30%;
+  border-width:medium;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-left-radius: 20px;
+  text-indent: 0;
+  display: inline-block;
+  color: hsl(0, 36%, 70%);
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  height: 40px;
+  line-height: 20px;
+  width: 85%;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 0 #fafafa;
+  margin-bottom:5rem;
+}
+
+.submit{
+  border-radius: 30%;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .6);
+  box-shadow: hsl(0, 6%, 24%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-width: 0;
+  height: 46px;
+  width: 20%;
+  background-color:hsl(0, 74%, 74%);
+  color: white;
+  position: absolute;
+  right: 5%;
+
+}
+
+.submit:hover{
+  background-color:hsl(0, 80%, 86%);
+}
+
+.email{
+  position: relative;
+}
+
+
+/* hero image */
+.base-apparel-hero {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-mobile-image{
+  width: 100%;
+  height: 100%;
+}

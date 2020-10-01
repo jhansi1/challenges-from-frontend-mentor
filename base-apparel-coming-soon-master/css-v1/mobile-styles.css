@@ -1,0 +1,128 @@
+body, html, head{
+  margin:0;
+}
+
+
+h1 {
+  letter-spacing: 0.3em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 3rem 0 2rem;
+  line-height: 1;
+  color:black;
+  color: hsl(0, 6%, 24%);
+  text-align: center;
+}
+
+p {
+  line-height: 1.75;
+  color: #f2a6a6;
+  color: hsl(0, 36%, 70%);
+  text-align: center;
+}
+
+span {
+  color: #f2a6a6;
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+
+
+/* whole content */
+.content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-columns: minmax(100px, auto);
+  background-image: url("../images/bg-pattern-desktop.svg");
+}
+
+/* header */
+.logo{
+  margin: 7% 7%;
+}
+
+/* hero image */
+.base-apparel-hero {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-mobile-image{
+  width: 100%;
+  height: 100%;
+}
+
+/* Intro */
+
+.base-apparel-about {
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 3% 10%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: hsl(0, 36%, 70%);
+  opacity: 1; /* Firefox */
+}
+
+/* contact details */
+.contact{
+  margin-top: 10%;
+  color: hsl(0, 36%, 70%);
+  position: relative;
+  background-color: inherit;
+}
+
+
+.email-details{
+  border-color:#f2a6a6;
+  border-color: hsl(0, 36%, 70%);
+  border-radius: 30%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: inherit;
+  display: inline-block;
+  color: hsl(0, 36%, 70%);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  height: 40px;
+  width: 85%;
+  text-align: center;
+  margin-bottom:5rem;
+}
+
+.submit{
+  border-radius: 30%;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .6);
+  box-shadow: hsl(0, 6%, 24%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-width: 0;
+  background-image: url("../images/icon-arrow.svg");
+  background-size: 0.7rem 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 46px;
+  width: 18%;
+  background-color:hsl(0, 74%, 74%);
+  color: white;
+  position: absolute;
+  right: 10%;
+}
+
+.submit:hover{
+  background-color:hsl(0, 80%, 86%);
+}

@@ -1,0 +1,54 @@
+html {
+    font-size: 100%;
+  }
+  
+  // * {
+  //   background: #000 !important;
+  //   color: #0f0 !important;
+  //   outline: solid #f00 1px !important;
+  // }
+
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+h1 {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: $grayishRed;
+    font-weight: 600;
+    margin: 3rem 0 2rem;
+    line-height: 1.15;
+    font-size: 3rem;
+  }
+  
+  p {
+    line-height: 1.75;
+    color: $desaturatedRed;
+  }
+  
+  span {
+    color: $desaturatedRed;
+    font-weight: 300;
+  }
+  
+  .content{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: bottom center;
+    
+    @include breakpoint(large){
+      grid-template-columns: 3fr 2fr;
+      background-position: left;
+    }
+  }

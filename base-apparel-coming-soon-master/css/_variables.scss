@@ -1,0 +1,24 @@
+//Fonts
+$font: 'Josefin Sans', sans-serif;
+
+// Colors
+$desaturatedRed: #ce9696;
+$softRed: #f96161;
+$grayishRed: #403939;
+
+
+//Breakpoints
+$breakpoints: (
+  large: 799px
+);
+
+@mixin breakpoint($size) {
+  $breakpoint-value: map-get(
+    $map: $breakpoints,
+    $key: $size
+  );
+
+  @media screen and (min-width: $breakpoint-value) {
+    @content;
+  }
+}
